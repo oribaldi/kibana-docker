@@ -45,4 +45,6 @@ RUN kibana-plugin install http://staging.elastic.co/{{ version_tag }}/downloads/
 RUN kibana-plugin install x-pack
 {% endif-%}
 
+RUN kibana-plugin install https://github.com/floragunncom/search-guard-kibana-plugin/releases/download/v5.3.2-2/searchguard-kibana-5.3.2-2.zip
+
 CMD /usr/local/bin/kibana-docker
